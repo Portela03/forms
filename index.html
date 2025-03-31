@@ -28,7 +28,7 @@
                     
                     <div class="form-group">
                         <label for="telefone">Telefone:</label>
-                        <input type="tel" id="telefone" name="telefone" required>
+                        <input type="tel" id="telefone" name="telefone" pattern="\d{10,11}" required>
                     </div>
                     
                     <div class="form-group">
@@ -39,16 +39,16 @@
                     <div class="form-group">
                         <p>Gênero:</p>
                         <div class="radio-group">
-                            <input type="radio" id="masculino" name="genero" value="masculino" required>
+                            <input type="radio" id="masculino" name="genero" value="masculino" required aria-label="Masculino">
                             <label for="masculino">Masculino</label>
                             
-                            <input type="radio" id="feminino" name="genero" value="feminino">
+                            <input type="radio" id="feminino" name="genero" value="feminino" aria-label="Feminino">
                             <label for="feminino">Feminino</label>
                             
-                            <input type="radio" id="outro" name="genero" value="outro">
+                            <input type="radio" id="outro" name="genero" value="outro" aria-label="Outro">
                             <label for="outro">Outro</label>
                             
-                            <input type="radio" id="prefiro-nao-dizer" name="genero" value="prefiro-nao-dizer">
+                            <input type="radio" id="prefiro-nao-dizer" name="genero" value="prefiro-nao-dizer" aria-label="Prefiro não dizer">
                             <label for="prefiro-nao-dizer">Prefiro não dizer</label>
                         </div>
                     </div>
